@@ -2,10 +2,9 @@
   "name": "myblog-app",
   "version": "1.0.0",
   "private": true,
-  "author": "Myles Yang <myles.yang@foxmail.com>",
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -19,7 +18,8 @@
     "vue-cute-timeline": "^1.2.8",
     "vue-katex": "^0.5.0",
     "vue-router": "^3.2.0",
-    "vuex": "^3.6.0"
+    "vuex": "^3.6.0",
+    "terser-webpack-plugin": "^4.2.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -37,7 +37,8 @@
     "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
     "script-ext-html-webpack-plugin": "^2.1.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "terser-webpack-plugin": "^4.2.3"
   },
   "engines": {
     "node": ">=14.15.0",

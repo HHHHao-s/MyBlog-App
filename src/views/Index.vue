@@ -13,9 +13,10 @@
           @size-change="getBlogList"
         />
       </el-col>
-      <el-col :md="5" class="hidden-sm-and-down">
+      <!--不需要-->>
+      <!-- <el-col :md="5" class="hidden-sm-and-down">
         <v-profile :class="['profile',profileSticky?'sticky':'']" />
-      </el-col>
+      </el-col> -->
     </el-row>
     <el-backtop />
   </div>
